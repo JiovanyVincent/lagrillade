@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { Home } from './components/Home';
-import { Menu } from './components/Menu';
-import { OrderOnline } from './components/OrderOnline';
-import { Contact } from './components/Contact';
+import { Home } from './Home';
+import { Menu } from './Menu';
+import { OrderOnline } from './OrderOnline';
+import { Contact } from './Contact';
+import { Logo } from './components/Logo';
 
 export class Header extends React.Component {
   render() {
     return (
       <Router>
         <div id="header" className="container">
+          <Logo />
           <nav>
             <ul>
               <li><Link className="link" to="/home">Home</Link></li>
