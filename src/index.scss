@@ -9,6 +9,7 @@ body {
 
 
 #header {
+  // background-color: #F7F7F7;
   .logo {
     margin-top: 20px;
     text-align: center;
@@ -17,22 +18,25 @@ body {
       height: 100px;
     }
   }
-  ul {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    li{
-      margin-right: 20px;
-      list-style: none;
-      margin-top: 10px;
-      .link {
-        color: black ;
-        padding-top: 8px;
-        transition: .5s ease-in-out;
-          &:hover {
-            color: #2e2e2e;
-            text-decoration: none;
-            border-top: 3px solid #000;
+  nav {
+    margin-top: 10px;
+    ul {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      li{
+        margin-right: 20px;
+        list-style: none;
+        margin-top: 10px;
+        .link {
+          padding-top: 8px;
+          color: black ;
+          transition: .5s ease-in-out;
+            &:hover {
+              color: #2e2e2e;
+              text-decoration: none;
+              border-top: 3px solid #000;
+          }
         }
       }
     }
