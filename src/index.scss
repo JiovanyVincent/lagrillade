@@ -3,13 +3,12 @@
 
 body {
   font-family: 'Montserrat','sans serif';
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-
 #header {
-  // background-color: #F7F7F7;
+  margin-bottom: 20px;
   .logo {
     margin-top: 20px;
     text-align: center;
@@ -24,7 +23,6 @@ body {
       margin-top: 15px;
       display: flex;
       justify-content: center;
-      li{
         margin-right: 20px;
         list-style: none;
         margin-top: 10px;
@@ -36,10 +34,29 @@ body {
               color: #2e2e2e;
               text-decoration: none;
               border-top: 3px solid #000;
-          }
         }
       }
     }
   }
 }
 
+.active {
+  background-color: #ffb74d;
+  border: 1px solid #eee;
+  border-radius: 3px;
+
+}
+
+.mainTitle {
+  margin-bottom: 0;
+  padding: 20px;
+  border: 5px solid #ffb74d;
+  border-bottom: none;
+  background-color: #ffb74d;
+  text-align: center;
+  font-weight: bold;
+}
+
+.master-cook {
+  width: 100%;
+}

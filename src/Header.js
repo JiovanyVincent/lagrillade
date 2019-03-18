@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import { Logo } from './components/Logo';
 import { ButtonTogglerDisplay } from './components/ButtonTogglerDisplay';
+import { SiblingLinks } from './components/SiblingLinks';
 
 export class Header extends React.Component {
-  render() {
+  
+  render() {    
+    SiblingLinks();
     return (
       <div id="header" className="container-fluid">
         <Logo />
@@ -13,10 +15,10 @@ export class Header extends React.Component {
           <ButtonTogglerDisplay />
           <div id="navbar-link" className="collapse navbar-collapse justify-content-center">
             <ul className="navbar-nav">
-              <li className="nav-item active"><Link className="nav-link link" to="/home">Home</Link></li>
-              <li><Link className="nav-link link" to="/menu">Menu</Link></li>
-              <li><Link className="nav-link link" to="/order-online">Order-online</Link></li>
-              <li><Link className="nav-link link" to="/contact">Contact</Link></li>
+              <Link id="firstL" className="nav-link link" to="/">Accueil</Link>
+              <Link className="nav-link link" to="/menu">Menu</Link>
+              <Link className="nav-link link" to="/order-online">Commande-en-ligne</Link>
+              <Link className="nav-link link" to="/contact">Contact</Link>
             </ul>
           </div>
         </nav>

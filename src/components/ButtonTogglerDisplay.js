@@ -11,10 +11,7 @@ export class ButtonTogglerDisplay extends React.Component {
         span.textContent = "";
         span.classList.add("navbar-toggler-icon");
       }
-      
-      console.log(span);
   }
-
   
   render() {
     return (
