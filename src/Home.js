@@ -12,19 +12,12 @@ export class Home extends React.Component {
     this.state = {
       titleF: Titles.title1,
     }
-    this.changetitle = this.changetitle.bind(this);
-  }
-
-  changetitle() {
-    let h1 = "ok";
-
-    this.setState({titleF: h1})
   }
 
   render() {
     return (
       <div>
-        <ContentHome carousel={this.changetitle}/>
+        <ContentHome carousel={this.state.titleF}/>
       </div>
     );
   }
