@@ -2,7 +2,7 @@ import React from 'react';
 import { ContentHome } from './components/ContentHome';
 
 const Titles = {
-  title1: "Venez découvrir notre cuisine créole",
+  title1: "Venez découvrir notre cuisine",
   title2: "Laissez vous tenter par nos spécialités"
 }
 
