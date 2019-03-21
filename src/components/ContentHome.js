@@ -3,7 +3,7 @@ import ribs from '../assets/Images/food-mix/PorkRibs.png';
 import skewer  from '../assets/Images/food-mix/brochette.png';
 import steak from '../assets/Images/food-mix/steakGrill.jpg';
 import pictureRestau from '../assets/Images/cooking.png';
-import Yang from '../assets/Images/master-cook/Yang.jpg';
+import Yang from '../assets/Images/master-cook/M-White.jpg';
 import Ayo from '../assets/Images/master-cook/Ayo.jpg';
 import PropTypes from 'prop-types';
 
