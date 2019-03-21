@@ -5,6 +5,7 @@ import steak from '../assets/Images/food-mix/steakGrill.jpg';
 import pictureRestau from '../assets/Images/cooking.png';
 import Yang from '../assets/Images/master-cook/M-White.jpg';
 import Ayo from '../assets/Images/master-cook/Ayo.jpg';
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export const ContentHome = (props) => {
@@ -55,6 +56,16 @@ export const ContentHome = (props) => {
                 <img style={{marginBottom: 0}} className="master-cook img-fluid" src={steak} alt="the steak" />
               </div>
             </div>
+          </div>
+          <div style={{display: "flex", 
+                      justifyContent: "center",
+                      margin: 10}}>
+            <button className="btn btn-warning">
+            <Link style={{color: "#2e2e2e", 
+                  textDecoration: "none",
+                  fontWeight: "bold"}} 
+                  className="toMenu" to="/menu">VOIR MENU</Link>
+            </button>
           </div>
         </div>
         <div id="section3">
