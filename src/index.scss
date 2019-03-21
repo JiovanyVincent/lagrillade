@@ -1,28 +1,48 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Srisakdi:700');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
 
+// VARIABLES
+$color-red: #fe1b00;
+$bg-maroon: #bd884d;
+$color-white: #fffff0;
+      
+
+// EXTEND/INHERITANCE
+%h3-shared {
+  background-color: $bg-maroon;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0px;
+  margin-bottom: 0;
+}
+
+
+// CODE
 body {
   font-family: 'Montserrat','sans serif';
-  margin: 0px;
-  padding: 0px;
-  background-color: #fffff0;
+  margin: 0;
+  padding: 0;
+  background-color: $color-white;
 }
+
 
 #social-network {
   position: fixed;
   right: 0;
   width: 2.7rem;
   padding: 10px;
-  border: 1px solid red;
-  background-color: red;
+  border: 1px solid $bg-maroon;
+  background-color: $bg-maroon;
+  z-index: 1;
   ul{
     margin: 0;
     padding: 0;
   }
   li {
     text-align: center;
-    color: #eee;
+    // color: #eee;
     padding: 5px;
     list-style: none;
     &:hover {
@@ -40,7 +60,7 @@ body {
     height: 150px;
   }
   .firstTitle {
-    color: darkred;
+    color: dark$color-red;
     font-family: 'Srisakdi', serif;
     font-weight: bold;
     font-style: italic;
@@ -54,23 +74,20 @@ body {
         margin: 10px 50px;
         padding: 10px;
         font-size: 16px;
-        border-top: 1px solid red;
-        border-bottom: 1px solid red;
-        color: red;
+        border-top: 1px solid $color-red;
+        border-bottom: 1px solid $color-red;
+        color: $color-red;
         text-transform: uppercase;
         font-weight: bold;
       }
   }
 }
 
+
 #header {
   nav {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
-    .navbar-link {
-      text-align: center;
-    }
-    ul {
       .link {
         font-size: 16px;
         list-style: none;
@@ -79,14 +96,14 @@ body {
         margin-right: 40px;
         color: black ;
         text-transform: uppercase;
+        font-weight: bold;
         transition: .5s ease-in-out;
           &:hover {
             color: #eee;
-            background-color: red;
+            background-color: $color-red;
             text-decoration: none;
-            border: 1px solid red;
+            border: 1px solid $color-red;
             border-radius: 3px;
-        }
       }
     }
   }
@@ -97,12 +114,96 @@ body {
   border-radius: 3px;
 }
 
-#content-home {
-  display: flex;
-  margin: 15px;
-  .master-cook {
-    margin-bottom: 5px;
-    height: 530px;
+//  home page
+#section1 {
+  margin-bottom: 20px;
+  .title-section1 {
+    @extend %h3-shared;
+  }
+  #about {
+    display: flex;
+    text-align: justify;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    h3 {
+      width: 200px;
+      margin-top: 40px;
+      padding-bottom: 10px;
+      border-bottom: 4px solid $color-red;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    p {
+      padding: 20px 20px 20px 0;
+      font-size: 20px;
+    }
+  }
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    h3 {
+      width: 200px;
+      padding-bottom: 10px;
+      text-align: center;
+      border-bottom: 4px solid $color-red;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  #concept {
+    display: flex;
+    h4 {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      color: $bg-maroon;
+    }
+    p {
+      padding: 10px 20px 0 20px;
+      text-align: justify;
+      font-size: 20px;
+    }  
+  }
+}
+
+
+#section2 {
+  h3 {
+    @extend %h3-shared;
+  }
+  padding-bottom: 0;
+  #content-section2 {
+    display: flex;
+    margin: 0 15px;
+    .col-sm {
+      padding: 0;
+    }
+    .master-cook {
+      height: 40vh;
+    }
+  }
+}
+ 
+#section3 {
+  h3 {
+    @extend %h3-shared;
+  }
+  #team {
+    margin: 0;
+    padding: 0;
+    .card { 
+      margin: 5px 30px;
+      text-align: center;
+    }
+  }
+  img {
+    margin: 20px 0px;
+    padding: 0;
   }
 }
 
@@ -134,13 +235,31 @@ body {
     }
   }
 
-  #content-home {
-    margin: 0;
-    .master-cook {
-      width: 100%;
-      height: 300px;
+  #section1 {
+    #about {
+      h3 {
+        margin-top: 10px;
+      }
+      p {
+        padding: 20px; 
+      }
+    }
+    .subtitle {
+      margin-top: 0;
+      display: block;
+    }
+    #concept {
+      margin-top: 15px;
     }
   }
 
-}
+  #section2 {
+    margin: 0;
+      .master-cook {
+        margin-bottom: 2px;
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
 
