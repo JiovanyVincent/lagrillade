@@ -1,10 +1,11 @@
 import React from 'react';
+import { ContentMenu } from './components/ContentMenu';
 
 export class Menu extends React.Component {
   render() {
     return (
       <div>
-        <h1>Menu page</h1>
+        <ContentMenu />
       </div>
     );
   }
