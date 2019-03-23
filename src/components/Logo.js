@@ -6,9 +6,9 @@ import grill from '../assets/Images/logo/Grillade-rond.png';
 
 export const Logo = (props) => {
   const infos = {
-    address: "5 Avenue jean-paul 94260 FRESNES",
-    telNumber: "+33 64 45 76 98",
-    pub: "élu meilleur Restaurant Grill créole",
+    address: "5 Avenue jean-paul ruffier 94260 FRESNES",
+    telNumber: "+33 9 94 45 76 98",
+    pub: "élu meilleur Restaurant Grill",
     pubYear: "de l'année 2018."
   }
   return (
