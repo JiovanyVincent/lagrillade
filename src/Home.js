@@ -1,5 +1,6 @@
 import React from 'react';
 import { ContentHome } from './components/ContentHome';
+import { Footer } from './Footer';
 
 const sections = [
   {
@@ -43,6 +44,7 @@ export class Home extends React.Component {
         TitleTwo={section4.title}
         TitleThree={section5.title}
       />
+      <Footer />
       </div>
     );
   }
