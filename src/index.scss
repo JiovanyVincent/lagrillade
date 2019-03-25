@@ -214,6 +214,7 @@ body {
   background-color: #2e2e2e;
   color: $bg-maroon;
   h1 {
+    padding-top: 20px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -229,6 +230,7 @@ body {
       padding-top: 15px;
       padding-bottom: 15px;
       text-transform: uppercase;
+      margin-top: 20px;
     }
     .images-menu {
       text-align: center;
@@ -241,6 +243,15 @@ body {
       font-weight: bold;
     }
   }
+}
+
+
+
+#footer {
+  padding: 1px;
+  text-align: center;
+  background-color: #97642F;
+  color: $color-white;
 }
 
 
