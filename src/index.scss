@@ -31,22 +31,26 @@ body {
 #social-network {
   position: fixed;
   right: 0;
-  width: 2.7rem;
   padding: 10px;
-  border: 1px solid $bg-maroon;
-  background-color: $bg-maroon;
+  background-color: transparent;
   z-index: 1;
+  margin: 10px;
   ul{
-    margin: 0;
+    margin-right: 0;
     padding: 0;
   }
   li {
+    padding: 8px;
+    margin: 0 5px 5px 5px;
     text-align: center;
-    // color: #eee;
-    padding: 5px;
     list-style: none;
+    background-color: $bg-maroon;
+    border-radius: 50%;
     &:hover {
       color: lightblue;
+      i {
+        border-radius: 50%;
+      }
     }
   }
 }
@@ -114,13 +118,18 @@ body {
   border-radius: 3px;
 }
 
-//  home page
+.col-sm {
+  padding: 0;
+}
+
+//  Home page
 #section1 {
   margin-bottom: 20px;
   .title-section1 {
     @extend %h3-shared;
   }
   #about {
+    margin: 0;
     display: flex;
     text-align: justify;
     img {
@@ -155,7 +164,11 @@ body {
     }
   }
   #concept {
+    margin: 0;
     display: flex;
+    .col-sm {
+      padding: 0;
+    }
     h4 {
       margin-top: 10px;
       text-align: center;
@@ -204,8 +217,7 @@ body {
     }
   }
   img {
-    margin: 20px 0px;
-    padding: 0;
+    margin: 20px 50px;
   }
 }
 
@@ -246,7 +258,6 @@ body {
 }
 
 
-
 #footer {
   padding: 1px;
   text-align: center;
@@ -283,6 +294,9 @@ body {
 
   #section1 {
     #about {
+      .col-sm {
+        padding: 0;
+      }
       h3 {
         margin-top: 10px;
       }
@@ -299,12 +313,10 @@ body {
     }
   }
 
-  #section2 {
+  #section3 {
     margin: 0;
-      .master-cook {
-        margin-bottom: 2px;
-        width: 100%;
-        height: 300px;
+      img {
+        margin: 5px;
       }
 
     }

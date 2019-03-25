@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class ButtonTogglerDisplay extends React.Component {
+export class ButtonCollapse extends React.Component {
   
   ButtonToggleClose() {
     let span = document.querySelector('span');

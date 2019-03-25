@@ -15,7 +15,7 @@ export const ContentHome = (props) => {
           <h3 className="title-section1">{props.TitleOne}</h3>
           <div id="content-section1">
             <div id="about" className="row">
-              <div className="col-sm">
+              <div id="col1" className="col-sm" style={{paddingRight: 20}}>
                 <img className="img-fluid" src={pictureRestau} alt="" />
               </div>
               <div className="col-sm">
@@ -72,13 +72,13 @@ export const ContentHome = (props) => {
           <h3>{props.TitleThree}</h3>
           <div id="team" className="row">
             <div className="col-sm card">
-              <img className="img-fluid" src={Yang} alt="chef-M-White"/>
+              <img className="img-fluid master-cook" src={Yang} alt="chef-M-White"/>
               <div className="card-body">
                 <h4>Chef Michael White</h4>
               </div>
             </div>
             <div className="col-sm card">
-              <img className="img-fluid" src={Ayo} alt="chef-ayo"/>
+              <img className="img-fluid master-cook" src={Ayo} alt="chef-ayo"/>
               <div className="card-body">
                 <h4>Chef Ayo Adeyemi</h4>
               </div>

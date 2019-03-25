@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Logo } from './components/Logo';
-import { ButtonTogglerDisplay } from './components/ButtonTogglerDisplay';
+import { ButtonCollapse } from './components/ButtonTogglerDisplay';
 import { SiblingLinks } from './components/SiblingLinks';
 
 export class Header extends React.Component {
@@ -12,7 +12,7 @@ export class Header extends React.Component {
       <div id="header" className="container-fluid">
         <Logo />
         <nav className="navbar navbar-expand-lg navbar-light justify-content-start">
-          <ButtonTogglerDisplay />
+          <ButtonCollapse />
           <div id="navbar-link" className="collapse navbar-collapse justify-content-center">
             <ul className="navbar-nav">
               <Link id="firstL" className="nav-link link" to="/">Accueil</Link>
