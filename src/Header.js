@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Logo } from './components/Logo';
-import { ButtonCollapse } from './components/ButtonTogglerDisplay';
+import { ButtonCollapse } from './components/ButtonCollapse';
 import { SiblingLinks } from './components/SiblingLinks';
 
 export class Header extends React.Component {
