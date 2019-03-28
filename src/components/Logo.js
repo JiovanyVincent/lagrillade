@@ -1,12 +1,9 @@
 import React from 'react';
-// import logo from '../assets/Images/logo/logo.png';
-// import logo from '../assets/Images/logo/logo.png';
-// import logo from '../assets/Images/logo/logo.png';
 import grill from '../assets/Images/logo/Grillade-rond.png';
 
 export const Logo = (props) => {
   const infos = {
-    address: "5 Avenue jean-paul ruffier 94260 FRESNES",
+    address: "6 Avenue Maurice Ravel 92160 ANTONY",
     telNumber: "+33 9 94 45 76 98",
     pub: "élu meilleur Restaurant Grill",
     pubYear: "de l'année 2018."

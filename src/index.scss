@@ -186,26 +186,31 @@ body {
 
 
 #section2 {
-  h3 {
+  h1 {
     @extend %h3-shared;
+    margin-bottom: 20px;
+
   }
   padding-bottom: 0;
   #content-section2 {
     display: flex;
-    margin: 0 15px;
+    margin: 0 15px 30px 15px;
     .col-sm {
       padding: 0;
     }
     .master-cook {
       width: 100%;
       height: 40vh;
+      padding-right: 5px;
     }
   }
 }
  
 #section3 {
-  h3 {
+  margin-bottom: 30px;
+  h1 {
     @extend %h3-shared;
+    margin-bottom: 30px;
   }
   #team {
     margin: 0;
@@ -258,12 +263,85 @@ body {
 }
 
 
-#footer {
+// Contact Page
+#contact {
+  border-top: 1px solid $bg-maroon;
+  h1 {
+    text-align: center;
+    margin: 15px 0 30px 0;
+    color: $bg-maroon;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h3 {
+    margin: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .row {
+    margin: 0;
+    #infos {
+      background-color: $bg-maroon;
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+    }
+    form {
+      text-align: center;
+        input {
+          width: 45%;
+          padding-bottom: 5px;
+          background-color: transparent;
+          border: transparent;
+          border-bottom: 3px solid #bd884d;
+          font-size: 23px;   
+          &:focus {
+            outline: none;
+          }  
+        }
+      }
+      textarea {
+        width: 93%;
+        background-color: transparent;
+        border: transparent;
+        border-bottom: 3px solid #bd884d;
+        margin-top: 15px;
+        font-size: 23px;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        margin-top: 20px;
+        width: 150px;
+        border: 1px solid $bg-maroon;
+        font-weight: bold;
+        &:hover {
+          background-color: $bg-maroon;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+
+
+.footer {
   padding: 1px;
   text-align: center;
   background-color: #97642F;
   color: $color-white;
 }
+
+
 
 
 // MEDIA QUERIES
@@ -313,12 +391,35 @@ body {
     }
   }
 
+  #section2 {
+    .master-cook {
+      margin-right: 0;
+      margin-top: 5px;
+    }
+  }
+
   #section3 {
     margin: 0;
       img {
         margin: 5px;
       }
-
     }
   }
 
+  #contact { 
+    .row {
+      form {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .divInputs {
+          display: flex;
+          flex-direction: column;
+          margin: 0px 5px 10px 10px;
+          input {
+            width: 98%;
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }

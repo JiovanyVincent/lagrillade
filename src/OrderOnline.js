@@ -1,7 +1,12 @@
 import React from 'react';
+import { ContentOrder } from './components/ContentOrder';
 
-export const OrderOnline = () => {
-  return (
-    <h1>Order online page</h1>
-  );
+export class OrderOnline extends React.Component {
+  render() {
+    return (
+      <div>
+        <ContentOrder />      
+      </div>
+    );
+  }
 }
