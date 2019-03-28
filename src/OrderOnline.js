@@ -1,17 +1,20 @@
 import React from 'react';
+import { LeftContentOrder } from './components/LeftContentOrder';
+import { MainContentOrder } from './components/MainContentOrder';
+import { RightContentOrder } from './components/RightContentOrder';
 
 export class OrderOnline extends React.Component {
   render() {
     return (
       <div id="content-order">
         <div className="left-content-order">
-          <h2>left page</h2>
+          <LeftContentOrder />
         </div>
         <div className="main-content-order">
-          <h2>main page</h2>
+          <MainContentOrder />
         </div>
         <div className="right-content-order">
-          <h2>right page</h2>
+          <RightContentOrder />
       </div>
     </div>
     );

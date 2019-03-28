@@ -269,13 +269,39 @@ body {
 //Order-Online Page
 #content-order {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 2fr;
   grid-auto-rows: minmax(70vh, auto);
   background-color: #2e2e2e;
   .left-content-order {
     background-color: $bg-maroon;
     border-right: 1px solid $color-white;
     color: black;
+    .user-auth {
+      margin-top: 15px;
+      border-bottom: 1px solid $color-white;
+      margin-left: 15px;
+    }
+    .dropdown {
+      h4 {
+        margin: 15px 10px 0 10px;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 5px 15px;
+        a {
+          padding: 5px 15px;
+          background-color: $bg-maroon;
+          border-bottom: 1px solid black;
+          color: black;
+          &:hover {
+            background-color: #2e2e2e;
+            color: $bg-maroon;
+          }
+        }
+      }
+    }
   }
   .main-content-order {
     text-align: center;
@@ -284,8 +310,18 @@ body {
   .right-content-order {
     background-color: $bg-maroon;
     border-left: 1px solid $color-white;
-    text-align: right;
     color: black;
+    #order {
+      margin-right: 15px;
+      h4 {
+        padding: 15px 10px 10px 10px;
+        text-align: left;
+        border-bottom: 1px solid $color-white;
+      }
+      span {
+        margin-left: 10px;
+      }
+    }
   }
 }
 
