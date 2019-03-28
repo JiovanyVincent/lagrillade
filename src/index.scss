@@ -125,9 +125,11 @@ body {
 //  Home page
 #section1 {
   margin-bottom: 20px;
+
   .title-section1 {
     @extend %h3-shared;
   }
+
   #about {
     margin: 0;
     display: flex;
@@ -150,6 +152,7 @@ body {
       font-size: 20px;
     }
   }
+
   .subtitle {
     display: flex;
     justify-content: center;
@@ -163,6 +166,7 @@ body {
       font-weight: bold;
     }
   }
+
   #concept {
     margin: 0;
     display: flex;
@@ -186,12 +190,13 @@ body {
 
 
 #section2 {
+  padding-bottom: 0;
+
   h1 {
     @extend %h3-shared;
     margin-bottom: 20px;
-
   }
-  padding-bottom: 0;
+
   #content-section2 {
     display: flex;
     margin: 0 15px 30px 15px;
@@ -206,12 +211,15 @@ body {
   }
 }
  
+
 #section3 {
   margin-bottom: 30px;
+
   h1 {
     @extend %h3-shared;
     margin-bottom: 30px;
   }
+
   #team {
     margin: 0;
     padding: 0;
@@ -221,6 +229,7 @@ body {
       box-shadow: 2px 2px 5px 2px lightgrey;
     }
   }
+
   img {
     margin: 20px 50px;
   }
@@ -239,6 +248,7 @@ body {
     text-transform: uppercase;
     text-decoration: underline;
   }
+
   .section-images {
     margin-top: 20px;
     display: flex;
@@ -264,49 +274,85 @@ body {
   }
 }
 
-
+// .left-content-order {
+  //   background-color: $bg-maroon;
+  //   border-right: 1px solid $color-white;
+  //   color: black;
+  //   .user-auth {
+  //     margin-top: 15px;
+  //     border-bottom: 1px solid $color-white;
+  //     margin-left: 15px;
+  //   }
+  //   .dropdown {
+  //     h4 {
+  //       margin: 15px 10px 0 10px;
+  //     }
+  //     .menu {
+  //       display: flex;
+  //       flex-direction: column;
+  //       text-align: justify;
+  //       padding: 5px 15px;
+  //       a {
+  //         padding: 5px 15px;
+  //         background-color: $bg-maroon;
+  //         border-bottom: 1px solid black;
+  //         color: black;
+  //         &:hover {
+  //           background-color: #2e2e2e;
+  //           color: $bg-maroon;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
 //Order-Online Page
 #content-order {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 3fr 2fr;
   grid-auto-rows: minmax(70vh, auto);
   background-color: #2e2e2e;
-  .left-content-order {
-    background-color: $bg-maroon;
-    border-right: 1px solid $color-white;
-    color: black;
-    .user-auth {
-      margin-top: 15px;
-      border-bottom: 1px solid $color-white;
-      margin-left: 15px;
-    }
-    .dropdown {
-      h4 {
-        margin: 15px 10px 0 10px;
-      }
-      .menu {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-        padding: 5px 15px;
-        a {
-          padding: 5px 15px;
-          background-color: $bg-maroon;
-          border-bottom: 1px solid black;
-          color: black;
-          &:hover {
-            background-color: #2e2e2e;
-            color: $bg-maroon;
-          }
-        }
-      }
-    }
-  }
+  
   .main-content-order {
-    text-align: center;
-    color: $color-white;
+    .menu-order {
+      margin-top: 15px;
+      h2 {
+        margin: 0 20%;
+        border: 1px solid $color-white;
+        border-radius: 5px;
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 15px;
+      }
+      p {
+        text-align: center;;
+        color: $color-white;
+        margin: 10px 20px;
+      }
+    }
+    .bar-horizontal {
+      margin: 0 150px;
+      border-bottom: 1px solid $color-white;
+    }
+    .list-items {
+      color: $color-white;
+      margin: 50px;
+      h4 {
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      .name-price-items {
+        display: flex;
+        justify-content: space-between;
+      }
+      span {
+        text-align: right;
+        color: $bg-maroon;
+      }
+    }
   }
+
   .right-content-order {
     background-color: $bg-maroon;
     border-left: 1px solid $color-white;
@@ -322,9 +368,29 @@ body {
         margin-left: 10px;
       }
     }
+    #items-added {
+      margin-bottom: 20px;
+      h2 {
+        margin: 10px 25px;
+      }
+    }
+    #subtotal {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid black;
+      margin: 25px;
+      padding: 10px;
+    }
+    button {
+      margin: 0 30px;
+      padding: 10px;
+      &:active {
+        color: $color-white;
+        background-color: $bg-maroon;
+      }
+    }
   }
 }
-
 
 
 

@@ -13,29 +13,30 @@ import redWine from './assets/Images/drinks/red-wine.jpg';
 import mojito from './assets/Images/drinks/mojito.jpg';
 import { Footer } from './Footer';
 
+export const dishs = [
+  { id: 1, image: accras, name: "Accras", price: "€5", description: "Recette des antilles très délicieuse avec sa sauce accras. (poulet, morue ou végétarien)." },
+  { id: 2, image: ribs, name: "Ribs", price: "€12", description: "Inspiré par la cuisine familiale découvrez une version revisité de nos ribs traditionnel."},
+  { id: 3, image: beefSteak, name: "Entrecôte", price: "€15", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
+  { id: 4, image: skewer, name: "Brochettes", price: "€10", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
+],
+  burgers = [
+    { id: 5, image: burger, name: "Burger classique", price: "€7", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
+    { id: 6, image: hambigesztenye, name: "hambigesztenye", price: "€8.90", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."}
+  ],
+  desserts = [
+    { id: 7, image: montBlanc, name: "Mont-Blanc", price: "€4", description: "Un Mont-Blanc sublimement beau et délicieusement bon." },
+    { id: 8, image: pudding, name: "Pudding", price: "€4", description: "Un Pudding sublimement beau et délicieusement bon." },
+    { id: 9, image: robinson, name: "Robinson", price: "€4", description: "Un Robinson sublimement beau et délicieusement bon." }
+  ],
+  drinks = [
+    { id: 10, image: redWine, name: "Verre de vin rouge", price: "€4.50", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." },
+    { id: 11, image: mojito, name: "Mojito", price: "€3.95", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." }
+  ];
+
 export class Menu extends React.Component {
   render() {
-    const dishes = [
-      { id: 1, image: accras, name: "Accras", price: "€5", description: "Recette des antilles très délicieuse avec sa sauce accras. (poulet, morue ou végétarien)." },
-      { id: 2, image: ribs, name: "Ribs", price: "€12", description: "Inspiré par la cuisine familiale découvrez une version revisité de nos ribs traditionnel."},
-      { id: 3, image: beefSteak, name: "Entrecôte", price: "€15", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
-      { id: 4, image: skewer, name: "Brochettes", price: "€10", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
-    ],
-      burgers = [
-        { id: 5, image: burger, name: "Burger classique", price: "€7", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
-        { id: 6, image: hambigesztenye, name: "hambigesztenye", price: "€8.90", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."}
-      ],
-      desserts = [
-        { id: 7, image: montBlanc, name: "Mont-Blanc", price: "€4", description: "Un Mont-Blanc sublimement beau et délicieusement bon." },
-        { id: 8, image: pudding, name: "Pudding", price: "€4", description: "Un Pudding sublimement beau et délicieusement bon." },
-        { id: 9, image: robinson, name: "Robinson", price: "€4", description: "Un Robinson sublimement beau et délicieusement bon." }
-      ],
-      drinks = [
-        { id: 10, image: redWine, name: "Verre de vin rouge", price: "€4.50", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." },
-        { id: 11, image: mojito, name: "Mojito", price: "€3.95", description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." }
-      ];
 
-    const listDishes = dishes.map((dish) =>
+    const listDishs = dishs.map((dish) =>
                       <div className="container">
                         <img className="images-menu img-fluid rounded" 
                         key={dish.id} 
@@ -81,7 +82,7 @@ export class Menu extends React.Component {
                           </div>);
     return (
       <div>
-        <ContentMenu listDish={listDishes}
+        <ContentMenu listDish={listDishs}
                       listBurger={listBurgers}
                       listDessert={listDesserts}
                       listDrink={listDrinks} />
