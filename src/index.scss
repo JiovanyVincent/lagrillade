@@ -314,6 +314,12 @@ body {
   background-color: #2e2e2e;
   
   .main-content-order {
+    h3 {
+      text-align: center;
+      color: $color-white;
+      margin-top: 25px;
+      text-transform: uppercase;
+    }
     .menu-order {
       margin-top: 15px;
       h2 {
@@ -334,18 +340,26 @@ body {
       margin: 0 150px;
       border-bottom: 1px solid $color-white;
     }
+    .bar-horizontal2{
+      margin: 0 150px;
+      border-bottom: 1px dotted $color-white;
+    }
     .list-items {
       color: $color-white;
-      margin: 50px;
-      h4 {
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: underline;
-      }
-      .name-price-items {
-        display: flex;
-        justify-content: space-between;
-      }
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // padding: 0 15x;
+      // h4 {
+      //   text-align: center;
+      //   text-transform: uppercase;
+      //   text-decoration: underline;
+      // }
+      // .name-price-items {
+      //   display: flex;
+      //   justify-content: space-between;
+      // }
       span {
         text-align: right;
         color: $bg-maroon;
