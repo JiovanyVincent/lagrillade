@@ -1,8 +1,5 @@
 import React from 'react';
-import { DishOrder } from '../components/DishOrder';
-import { BurgerOrder } from '../components/BurgerOrder';
-import { DessertOrder } from '../components/DessertOrder';
-// import { DrinkOrder } from '../components/DrinkOrder';
+import { ItemsOrder } from '../components/ItemsOrder';
 import { CartOrder } from '../components/CartOrder';
 import { dishs, burgers, desserts, drinks } from './Menu';
 import { Footer } from './Footer';
@@ -126,7 +123,7 @@ export class OrderOnline extends React.Component {
               </div>
               <h3>Plats</h3>
               {this.state.dishItems.map((dish) => {
-                return <DishOrder key={dish.id} 
+                return <ItemsOrder key={dish.id} 
                                           details={dish} 
                                           handleClickAddItems={this.handleClickAddItems}
                                            />
@@ -135,7 +132,7 @@ export class OrderOnline extends React.Component {
             <div className="main-content-order">
               <h3>Burgers</h3>
               {this.state.burgerItems.map((burger) => {
-                return <BurgerOrder key={burger.id} 
+                return <ItemsOrder key={burger.id} 
                                           details={burger} 
                                           handleClickAddItems={this.handleClickAddItems}
                                            />
@@ -144,7 +141,7 @@ export class OrderOnline extends React.Component {
             <div className="main-content-order">
             <h3>Desserts</h3>
               {this.state.dessertItems.map((dessert) => {
-                return <DessertOrder key={dessert.id} 
+                return <ItemsOrder key={dessert.id} 
                                           details={dessert} 
                                           handleClickAddItems={this.handleClickAddItems}
                                            />
