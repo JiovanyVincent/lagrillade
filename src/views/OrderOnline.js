@@ -35,7 +35,6 @@ export class OrderOnline extends React.Component {
       if (cartItem.name === item.name) {
         found = true;
         cartItem.quantity++;
-        
         return cartItem;
       } else {
         return cartItem;
