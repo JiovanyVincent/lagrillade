@@ -26,6 +26,7 @@ export class MainContentOrder extends React.Component {
           <h4>Boissons</h4>
         {this.props.listDrink} */}
         </div>
+        
         <div className="bar-horizontal2"></div>
       </div>
     ); 

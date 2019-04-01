@@ -15,7 +15,6 @@ export const RightContentOrder = (props) => {
                     {cartItem.quantity > 1 ? <span> {cartItem.quantity}x</span> : ''} {cartItem.name} {cartItem.price}€
                   </p> 
         }) : <p>Panier vide</p>}
-
       </div>
       <div id="subtotal">
         <h4>Sous-total</h4>

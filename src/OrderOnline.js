@@ -15,6 +15,7 @@ export class OrderOnline extends React.Component {
       subtotal: 0
     }
     this.handleClickAddItems = this.handleClickAddItems.bind(this);
+    this.state.handleReducer = this.handleReducer.bind(this);
   }
 
   handleClickAddItems(item) {
@@ -48,8 +49,6 @@ export class OrderOnline extends React.Component {
     subtotalItems =  this.state.subtotal + item.price;
       this.setState({subtotal: subtotalItems})
     console.log(subtotalItems);
-    console.log(updatedCart);
-    
   }
   
   render() {
@@ -122,7 +121,10 @@ export class OrderOnline extends React.Component {
               </div>
               <h3>Plats</h3>
               {this.state.dishItems.map((dish) => {
-                return <MainContentOrder key={dish.id} details={dish} handleClickAddItems={this.handleClickAddItems}/>
+                return <MainContentOrder key={dish.id} 
+                                          details={dish} 
+                                          handleClickAddItems={this.handleClickAddItems}
+                                           />
               })}
               {/* <MainContentOrder listDish={listDishs}
                                   listBurger={listBurgers}
@@ -144,7 +146,8 @@ export class OrderOnline extends React.Component {
                                 letter={this.state.letter}
                                 cart={this.state.cart}
                                 key={dishs.id}
-                                subtotal={this.state.subtotal}/>
+                                subtotal={this.state.subtotal}
+                                />
         </div>
         </div>
         <Footer />
