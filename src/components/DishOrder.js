@@ -1,12 +1,10 @@
 import React from 'react';
-// import { dishs } from '../Menu';
 
-export class MainContentOrder extends React.Component {
+export class DishOrder extends React.Component {
 
   
   render() {
     let dish = this.props.details;
-    // let addToCart = this.props.handleClickAddItems(dish);
     return (
       <div>
         <div className="list-items btn btn-dark" 
@@ -19,14 +17,7 @@ export class MainContentOrder extends React.Component {
               type="button">
               Ajouter au panier
           </p>
-          {/* <h4>Burgers</h4>
-          {this.props.listBurger}
-          <h4>Desserts</h4>
-          {this.props.listDessert}
-          <h4>Boissons</h4>
-        {this.props.listDrink} */}
         </div>
-        
         <div className="bar-horizontal2"></div>
       </div>
     ); 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { ContentHome } from './components/ContentHome';
-import { Footer } from './Footer';
+import { ContentHome } from '../components/ContentHome';
+import { Footer } from '../views/Footer';
 
 const sections = [
   {

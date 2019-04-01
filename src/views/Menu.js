@@ -1,16 +1,16 @@
 import React from 'react';
-import { ContentMenu } from './components/ContentMenu';
-import ribs from './assets/Images/food-mix/PorkRibs.png';
-import beefSteak from './assets/Images/food-mix/beef-steak-dish.jpg';
-import skewer from './assets/Images/food-mix/skewer-dish.jpg';
-import burger from './assets/Images/food-mix/burger.jpg';
-import hambigesztenye from './assets/Images/food-mix/hambigesztenye.jpg';
-import montBlanc from './assets/Images/desserts/mont-blanc.jpg';
-import pudding from './assets/Images/desserts/pudding-antillais.jpg';
-import robinson from './assets/Images/desserts/robinson.jpg';
-import redWine from './assets/Images/drinks/red-wine.jpg';
-import mojito from './assets/Images/drinks/mojito.jpg';
-import { Footer } from './Footer';
+import { ContentMenu } from '../components/ContentMenu';
+import ribs from '../assets/Images/food-mix/PorkRibs.png';
+import beefSteak from '../assets/Images/food-mix/beef-steak-dish.jpg';
+import skewer from '../assets/Images/food-mix/skewer-dish.jpg';
+import burger from '../assets/Images/food-mix/burger.jpg';
+import hambigesztenye from '../assets/Images/food-mix/hambigesztenye.jpg';
+import montBlanc from '../assets/Images/desserts/mont-blanc.jpg';
+import pudding from '../assets/Images/desserts/pudding-antillais.jpg';
+import robinson from '../assets/Images/desserts/robinson.jpg';
+import redWine from '../assets/Images/drinks/red-wine.jpg';
+import mojito from '../assets/Images/drinks/mojito.jpg';
+import { Footer } from '../views/Footer';
 
 export const dishs = [
   { id: 1, image: ribs, name: "Ribs", price: 12.5, description: "Inspiré par la cuisine familiale découvrez une version revisité de nos ribs traditionnel."},

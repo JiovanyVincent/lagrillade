@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentContact } from './components/ContentContact';
+import { ContentContact } from '../components/ContentContact';
 import { Footer } from './Footer';
 
 export class Contact extends React.Component {

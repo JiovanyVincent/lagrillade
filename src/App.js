@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, } from 'react-router-dom';
-import { Header } from './Header';
-import { Home } from './Home';
-import { Menu } from './Menu';
-import { Contact } from './Contact';
-import { OrderOnline } from './OrderOnline';
+import { Header } from './views/Header';
+import { Home } from './views/Home';
+import { Menu } from './views/Menu';
+import { Contact } from './views/Contact';
+import { OrderOnline } from './views/OrderOnline';
 import { SocialNetwork } from './components/SocialNetwork';
 
 export default class App extends React.Component {

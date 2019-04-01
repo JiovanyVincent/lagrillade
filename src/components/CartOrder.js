@@ -1,7 +1,6 @@
 import React from 'react';
-// import { dishs } from '../Menu';
 
-export const RightContentOrder = (props) => {
+export const CartOrder = (props) => {
   return (
     <div>
       <div id="order">

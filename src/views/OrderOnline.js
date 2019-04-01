@@ -1,7 +1,8 @@
 import React from 'react';
-import { MainContentOrder } from './components/MainContentOrder';
-import { RightContentOrder } from './components/RightContentOrder';
-import { dishs } from './Menu';
+import { DishOrder } from '../components/DishOrder';
+import { BurgerOrder } from '../components/BurgerOrder';
+import { CartOrder } from '../components/CartOrder';
+import { dishs, burgers, desserts, drinks } from './Menu';
 import { Footer } from './Footer';
 
 export class OrderOnline extends React.Component {
@@ -11,11 +12,13 @@ export class OrderOnline extends React.Component {
       number: 0,
       letter: "",
       dishItems: dishs,
+      burgerItems: burgers,
+      dessertItems: desserts,
+      drinkItems: drinks,
       cart: [],
       subtotal: 0
     }
     this.handleClickAddItems = this.handleClickAddItems.bind(this);
-    this.state.handleReducer = this.handleReducer.bind(this);
   }
 
   handleClickAddItems(item) {
@@ -121,18 +124,20 @@ export class OrderOnline extends React.Component {
               </div>
               <h3>Plats</h3>
               {this.state.dishItems.map((dish) => {
-                return <MainContentOrder key={dish.id} 
+                return <DishOrder key={dish.id} 
                                           details={dish} 
                                           handleClickAddItems={this.handleClickAddItems}
                                            />
               })}
-              {/* <MainContentOrder listDish={listDishs}
-                                  listBurger={listBurgers}
-                                  listDessert={listDesserts}
-                                  listDrink={listDrinks}/> */}
             </div>
-            <div>
-
+            <div className="main-content-order">
+              <h3>Burgers</h3>
+              {this.state.burgerItems.map((burger) => {
+                return <BurgerOrder key={burger.id} 
+                                          details={burger} 
+                                          handleClickAddItems={this.handleClickAddItems}
+                                           />
+              })}
             </div>
             <div>
 
@@ -141,16 +146,16 @@ export class OrderOnline extends React.Component {
 
             </div>
           </div>
-          <div className="right-content-order">
-            <RightContentOrder  number={this.state.number}
-                                letter={this.state.letter}
-                                cart={this.state.cart}
-                                key={dishs.id}
-                                subtotal={this.state.subtotal}
-                                />
+            <div className="right-content-order">
+              <CartOrder  number={this.state.number}
+                                  letter={this.state.letter}
+                                  cart={this.state.cart}
+                                  key={dishs.id}
+                                  subtotal={this.state.subtotal}
+                                  />
+            </div>
         </div>
-        </div>
-        <Footer />
+          <Footer />
       </div>
     );
   }
