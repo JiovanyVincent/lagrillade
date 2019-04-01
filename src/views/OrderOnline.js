@@ -1,6 +1,8 @@
 import React from 'react';
 import { DishOrder } from '../components/DishOrder';
 import { BurgerOrder } from '../components/BurgerOrder';
+import { DessertOrder } from '../components/DessertOrder';
+// import { DrinkOrder } from '../components/DrinkOrder';
 import { CartOrder } from '../components/CartOrder';
 import { dishs, burgers, desserts, drinks } from './Menu';
 import { Footer } from './Footer';
@@ -139,8 +141,14 @@ export class OrderOnline extends React.Component {
                                            />
               })}
             </div>
-            <div>
-
+            <div className="main-content-order">
+            <h3>Desserts</h3>
+              {this.state.dessertItems.map((dessert) => {
+                return <DessertOrder key={dessert.id} 
+                                          details={dessert} 
+                                          handleClickAddItems={this.handleClickAddItems}
+                                           />
+              })}
             </div>
             <div>
 

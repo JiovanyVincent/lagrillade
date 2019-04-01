@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class DessertOrder extends React.Component {
+export class DessetOrder extends React.Component {
 
   
   render() {
