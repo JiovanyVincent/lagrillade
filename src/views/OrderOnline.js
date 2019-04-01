@@ -50,67 +50,9 @@ export class OrderOnline extends React.Component {
     let subtotalItems = this.state.subtotal;
     subtotalItems =  this.state.subtotal + item.price;
       this.setState({subtotal: subtotalItems})
-    console.log(subtotalItems);
   }
   
   render() {
-
-    // const listDishs = dishs.map((dish, name) => 
-    //                   <div className="container"
-    //                         style={{borderBottom: "1px dotted #eee",
-    //                                 marginBottom: 20}}
-    //                                 key={dish.id}
-    //                                 name={dish.name}
-    //                                 onClick={this.handleClickAddItems}>
-    //                     <div className="name-price-items btn btn-dark">
-    //                       <p style={{color: "#bd884d",
-    //                                 fontSize: 18}}>{dish.name}</p>
-    //                       <p style={{color: "#bd884d",
-    //                                 fontSize: 18}}>{dish.price}</p> 
-    //                     </div>
-    //                 </div>),
-    //  const  listBurgers = burgers.map((burger) => 
-    //                     <div className="container"
-    //                           style={{borderBottom: "1px dotted #eee",
-    //                                   marginBottom: 20}}
-    //                                   key={burger.id}
-    //                                   onClick={this.handleClickAddItems}>
-    //                       <div className="name-price-items btn btn-dark">
-    //                         <p style={{color: "#bd884d",
-    //                                   fontSize: 18}}>{burger.name}</p>
-    //                         <p style={{color: "#bd884d",
-    //                                   fontSize: 18}}>{burger.price}</p> 
-    //                       </div>
-    //                   </div>),
-    //     listDesserts = desserts.map((dessert) => 
-    //                   <div className="container"
-    //                         style={{borderBottom: "1px dotted #eee",
-    //                                 marginBottom: 20}}
-    //                                 key={dessert.id}
-    //                                 onClick={this.handleClickAddItems}>
-    //                     <div className="name-price-items btn btn-dark">
-    //                       <p style={{color: "#bd884d",
-    //                                 fontSize: 18}}>{dessert.name}</p>
-    //                       <p style={{color: "#bd884d",
-    //                                 fontSize: 18}}>{dessert.price}</p> 
-    //                     </div>
-    //                 </div>),
-    //   listDrinks = drinks.map((drink) => 
-    //               <div className="container"
-    //                     style={{borderBottom: "1px dotted #eee",
-    //                             marginBottom: 20}}
-    //                             key={drink.id}>
-    //                 <div className="name-price-items">
-    //                   <p style={{color: "#bd884d",
-    //                             fontSize: 18}}>{drink.name}</p>
-    //                   <p style={{color: "#bd884d",
-    //                             fontSize: 18}}>{drink.price}</p> 
-    //                 </div>
-    //                 <p>{drink.description}</p>
-    //                 <button className="btn btn-light"
-    //                         style={{marginBottom: 20}}>Ajouter au panier</button>
-    //             </div>);
-
     return (
       <div>
         <div id="content-order">
@@ -147,10 +89,16 @@ export class OrderOnline extends React.Component {
                                            />
               })}
             </div>
-            <div>
-
+            <div className="main-content-order">
+            <h3>Boissons</h3>
+              {this.state.drinkItems.map((drink) => {
+                return <ItemsOrder key={drink.id} 
+                                          details={drink} 
+                                          handleClickAddItems={this.handleClickAddItems}
+                                           />
+              })}
             </div>
-          </div>
+            </div>
             <div className="right-content-order">
               <CartOrder  number={this.state.number}
                                   letter={this.state.letter}
@@ -159,9 +107,9 @@ export class OrderOnline extends React.Component {
                                   subtotal={this.state.subtotal}
                                   />
             </div>
+          </div>
+            <Footer />
         </div>
-          <Footer />
-      </div>
     );
   }
 }

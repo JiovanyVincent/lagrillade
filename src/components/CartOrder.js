@@ -8,7 +8,6 @@ export const CartOrder = (props) => {
       </div>
       <div id="items-added"
             style={{marginLeft: 25}}>
-
         {props.cart.length > 0 ? props.cart.map((cartItem) => {
           return <p key={cartItem.id}>
                     {cartItem.quantity > 1 ? <span> {cartItem.quantity}x</span> : ''} {cartItem.name} {cartItem.price}€

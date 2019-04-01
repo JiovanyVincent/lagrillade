@@ -19,7 +19,7 @@ export const dishs = [
 ],
   burgers = [
     { id: 4, image: burger, name: "Burger classique", price: 7, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
-    { id: 5, image: hambigesztenye, name: "hambigesztenye", price: 8.90, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."}
+    { id: 5, image: hambigesztenye, name: "Hambigesztenye", price: 8.5, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."}
   ],
   desserts = [
     { id: 6, image: montBlanc, name: "Mont-Blanc", price: 4, description: "Un Mont-Blanc sublimement beau et délicieusement bon." },
@@ -27,8 +27,8 @@ export const dishs = [
     { id: 8, image: robinson, name: "Robinson", price: 4, description: "Un Robinson sublimement beau et délicieusement bon." }
   ],
   drinks = [
-    { id: 9, image: redWine, name: "Verre de vin rouge", price: 4.50, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." },
-    { id: 10, image: mojito, name: "Mojito", price: 3.95, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." }
+    { id: 9, image: redWine, name: "Verre de vin rouge", price: 4.5, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." },
+    { id: 10, image: mojito, name: "Mojito", price: 3.5, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." }
   ];
 
 export class Menu extends React.Component {

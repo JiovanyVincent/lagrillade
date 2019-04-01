@@ -1,7 +1,6 @@
 import React from 'react';
 
 export class ItemsOrder extends React.Component {
-
   
   render() {
     let dish = this.props.details;
