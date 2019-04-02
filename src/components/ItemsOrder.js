@@ -10,7 +10,7 @@ export class ItemsOrder extends React.Component {
             onClick={() => this.props.handleClickAddItems(dish)}
             key={dish.id}>
           <p>{dish.name}</p>
-          <p>{dish.price}€</p>
+          <p style={{color: '#bd884d'}}>{dish.price}€</p>
           <p  style={{padding: 5,width: 180, backgroundColor: "#eee", color: "black"}} 
               className="btn btn-light" 
               type="button">
