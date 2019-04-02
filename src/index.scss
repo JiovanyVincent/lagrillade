@@ -237,6 +237,7 @@ body {
 
 
 
+
 // Menu Page
 .content-menu {
   background-color: #2e2e2e;
@@ -274,37 +275,8 @@ body {
   }
 }
 
-// .left-content-order {
-  //   background-color: $bg-maroon;
-  //   border-right: 1px solid $color-white;
-  //   color: black;
-  //   .user-auth {
-  //     margin-top: 15px;
-  //     border-bottom: 1px solid $color-white;
-  //     margin-left: 15px;
-  //   }
-  //   .dropdown {
-  //     h4 {
-  //       margin: 15px 10px 0 10px;
-  //     }
-  //     .menu {
-  //       display: flex;
-  //       flex-direction: column;
-  //       text-align: justify;
-  //       padding: 5px 15px;
-  //       a {
-  //         padding: 5px 15px;
-  //         background-color: $bg-maroon;
-  //         border-bottom: 1px solid black;
-  //         color: black;
-  //         &:hover {
-  //           background-color: #2e2e2e;
-  //           color: $bg-maroon;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+
+
 
 //Order-Online Page
 #content-order {
@@ -356,6 +328,9 @@ body {
       }
     }
   }
+          .hide-show {
+            display: none;
+          }
 
   .right-content-order {
     background-color: $bg-maroon;
@@ -376,6 +351,13 @@ body {
       margin-bottom: 20px;
       h2 {
         margin: 10px 25px;
+      }
+      .button-hide {
+        border-radius: 4%;
+        height: 5px;
+        line-height: 0;
+        margin: 0 5px;
+        box-shadow: 1px 1px 2px 1px #2e2e2e;
       }
     }
     #subtotal {
@@ -540,22 +522,34 @@ body {
         margin: 5px;
       }
     }
-  }
 
-  #contact { 
-    .row {
-      form {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        .divInputs {
-          display: flex;
-          flex-direction: column;
-          margin: 0px 5px 10px 10px;
-          input {
-            width: 98%;
-            margin-top: 25px;
+    #contact { 
+      .row {
+        form {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          .divInputs {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 5px 10px 10px;
+            input {
+              width: 98%;
+              margin-top: 25px;
+            }
           }
         }
       }
     }
+
+    #content-order {
+      display: flex;
+      flex-direction: column;
+    }
+    #cart-order {
+      height: 50vh;
+      // position: fixed;
+      // bottom: 0;
+      // background-color: $bg-maroon;
+    }
   }
+

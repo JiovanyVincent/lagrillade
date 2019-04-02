@@ -2,7 +2,7 @@ import React from 'react';
 
 export const CartOrder = (props) => {
   return (
-    <div>
+    <div id="cart-order">
       <div id="order">
         <h4>Ma commande<span>( {props.number} article{props.letter} )</span></h4>
       </div>
@@ -10,7 +10,11 @@ export const CartOrder = (props) => {
             style={{marginLeft: 25}}>
         {props.cart.length > 0 ? props.cart.map((cartItem) => {
           return <p key={cartItem.id}>
-                    {cartItem.quantity > 1 ? <span> {cartItem.quantity}x</span> : ''} {cartItem.name} {cartItem.price}€
+                    {cartItem.quantity > 0 ? <span> {cartItem.quantity}x</span> : ''} {cartItem.name} {cartItem.price}€
+                    <button className="button-hide btn btn-primary"
+                    onClick={() => props.handleCounter(cartItem)}>+</button> 
+                    <button className="button-hide btn btn-danger"
+                     onClick={() => props.handleReducer(cartItem)}>-</button> 
                   </p> 
         }) : <p>Panier vide</p>}
       </div>
@@ -18,7 +22,8 @@ export const CartOrder = (props) => {
         <h4>Sous-total</h4>
         <p>{props.subtotal}€</p>
       </div>
-      <button id="order-now">Commander</button>
+      <button id="order-now"
+              onClick={props.handleButtonOrder}>Commander</button>
     </div>
   );
 }
