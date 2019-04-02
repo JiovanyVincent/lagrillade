@@ -16,12 +16,11 @@ export class Contact extends React.Component {
     this.setState({value: e.target.value})
   }
 
-  handleSubmit(e) {
+  handleSubmit() {
     const name = document.querySelector('input[type="text"]').value,
           mail= document.querySelector('input[type="mail"]').value;
     
     alert(name + " " + mail + " Votre message à été envoyé avec succès.");
-    e.preventDefault();
   }
 
   render() {
