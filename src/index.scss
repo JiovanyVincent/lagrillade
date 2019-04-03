@@ -400,7 +400,6 @@ body {
     font-weight: bold;
   }
   .row {
-    margin: 0;
     #infos {
       background-color: $bg-maroon;
       color: $color-white;
@@ -462,7 +461,7 @@ body {
 
 
 .footer {
-  padding: 1px;
+  padding: 10px;
   text-align: center;
   background-color: #97642F;
   color: $color-white;
