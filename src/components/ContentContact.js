@@ -20,14 +20,34 @@ export const ContentContact = (props) => {
         <div className="col-sm">
           <form onSubmit={props.handleSubmit}>
             <h3>Nous Contacter</h3>
+            <p id="alert-success" className="alert alert-success alert-dismissible fade show" role="alert" >
+              <strong>Success:</strong> {props.success}
+              <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>      
+            </p>
+            <p id="alert-error1" className="alert alert-danger alert-dismissible fade show" role="alert" >
+              <strong>Erreur:</strong> {props.error1}
+              <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>      
+            </p>
+            <p id="alert-error2" className="alert alert-danger alert-dismissible fade show" role="alert" >
+              <strong>Erreur:</strong> {props.error2}
+              <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>      
+            </p>
             <div className="divInputs" style={{marginTop: 20 ,textAlign: "center"}}>
-              <input style={{marginRight: 15}} 
+              <input style={{marginRight: 15}}
+                      className="input-user" 
                       type="text"
                       placeholder="Nom"
                       onChange={props.handleChange}
                       required />
 
-              <input  type="mail"
+              <input  className="input-user"
+                      type="email"
                       placeholder="E-mail" 
                       onChange={props.handleChange}
                       required />
@@ -40,8 +60,9 @@ export const ContentContact = (props) => {
 
             </textarea>
             <br />
-            <button type="submit"
-                    className="btn">ENVOYER</button>
+            <input type="submit"
+                    className="btn input-button" 
+                    value="ENVOYER" />
             </div>
           </form>
         </div>

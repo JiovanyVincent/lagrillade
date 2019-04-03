@@ -6,7 +6,10 @@ export class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ""
+      value: "",
+      success: "",
+      error1:"",
+      error2: ""
     }
     this.handleUserFields = this.handleUserFields.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -16,12 +19,35 @@ export class Contact extends React.Component {
     this.setState({value: e.target.value})
   }
 
-  handleSubmit() {
-    const name = document.querySelector('input[type="text"]').value,
-          mail= document.querySelector('input[type="mail"]').value;
+  handleSubmit(e) {
+    let name = document.querySelector('input[type="text"]').value;
+    let mail = document.querySelector('input[type="email"]').value;
+          
+    const messageSuccess = name + " Votre message à été envoyé avec succès !",
+          messageError1 = "Veuillez entre une adresse mail valide. Ex: paul@live.fr ou .com",
+          messageError2 = "Veuillez entrer un nom valide. Ex: Jules ou jules",
+          alertSuccess = document.getElementById('alert-success'),
+          alertError1 = document.getElementById('alert-error1'),
+          alertError2 =document.getElementById('alert-error2');
+
+    let regex1 = /\w+@+[a-z]+(\.fr|\.com)$/,
+        regex2 = /^[a-zA-Z]+(([-][a-zA-Z ])?[a-zA-Z]*)*$/g;
+
+    if (regex1.test(mail) && regex2.test(name)) {
+      this.setState({success: messageSuccess});
+      alertSuccess.style.display = "block";
+    } else if (!regex2.test(name)) {
+      this.setState({error2: messageError2})
+      alertError2.style.display = "block";
+    } else if (!regex1.test(mail)) {
+      this.setState({error1: messageError1});
+      alertError1.style.display = "block";
+    }
     
-    alert(name + " " + mail + " Votre message à été envoyé avec succès.");
-  }
+  e.preventDefault();
+  console.log(regex2.test(name));
+  console.log(regex1.test(mail));
+}
 
   render() {
     const infos = [
@@ -41,6 +67,9 @@ export class Contact extends React.Component {
                         handleSubmit={this.handleSubmit}
                         infos={infosList}
                         location={locationMaps}
+                        success={this.state.success}
+                        error1={this.state.error1}
+                        error2={this.state.error2}
         />
         <Footer />
       </div>

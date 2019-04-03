@@ -414,17 +414,25 @@ body {
     }
     form {
       text-align: center;
-        input {
-          width: 45%;
-          padding-bottom: 5px;
-          background-color: transparent;
-          border: transparent;
-          border-bottom: 3px solid #bd884d;
-          font-size: 23px;   
-          &:focus {
-            outline: none;
-          }  
-        }
+      #alert-success {
+        display: none;
+      }
+      #alert-error1 {
+        display: none;
+      }
+      #alert-error2 {
+        display: none;
+      }
+      .input-user {
+        width: 45%;
+        padding-bottom: 5px;
+        background-color: transparent;
+        border: transparent;
+        border-bottom: 3px solid #bd884d;
+        font-size: 23px;   
+        &:focus {
+          outline: none;
+        }  
       }
       textarea {
         width: 93%;
@@ -437,7 +445,7 @@ body {
           outline: none;
         }
       }
-      button {
+      .input-button {
         margin-top: 20px;
         width: 150px;
         border: 1px solid $bg-maroon;
@@ -449,6 +457,7 @@ body {
       }
     }
   }
+}
 
 
 
