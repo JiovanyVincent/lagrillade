@@ -34,14 +34,19 @@ export class Contact extends React.Component {
         regex2 = /^[a-zA-Z]+(([-][a-zA-Z ])?[a-zA-Z]*)*$/g;
 
     if (regex1.test(mail) && regex2.test(name)) {
-      this.setState({success: messageSuccess});
-      alertSuccess.style.display = "block";
+        this.setState({success: messageSuccess});
+        alertSuccess.style.display = "block";
+        alertError1.remove();
+        alertError2.remove();
+        setTimeout(() => {
+          alertSuccess.remove();
+        },3000)
     } else if (!regex2.test(name)) {
-      this.setState({error2: messageError2})
-      alertError2.style.display = "block";
+        this.setState({error2: messageError2})
+        alertError2.style.display = "block";
     } else if (!regex1.test(mail)) {
-      this.setState({error1: messageError1});
-      alertError1.style.display = "block";
+        this.setState({error1: messageError1});
+        alertError1.style.display = "block";
     }
     
   e.preventDefault();
