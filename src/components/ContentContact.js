@@ -21,7 +21,7 @@ export const ContentContact = (props) => {
           <form onSubmit={props.handleSubmit}>
             <h3>Nous Contacter</h3>
             <p id="alert-success" className="alert alert-success alert-dismissible fade show" role="alert" >
-              <strong>Success:</strong> {props.success}
+              <strong>Succès:</strong> {props.success}
               <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>      
