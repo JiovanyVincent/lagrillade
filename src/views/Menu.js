@@ -13,22 +13,22 @@ import mojito from '../assets/Images/drinks/mojito.jpg';
 import { Footer } from '../views/Footer';
 
 export const dishs = [
-  { id: 1, image: ribs, name: "Ribs", price: 12.5, description: "Inspiré par la cuisine familiale découvrez une version revisité de nos ribs traditionnel."},
-  { id: 2, image: beefSteak, name: "Entrecôte", price: 15, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
-  { id: 3, image: skewer, name: "Brochettes", price: 10, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
+  { id: 1, image: ribs, name: "Ribs", price: 12.5, description: "Inspirée par la cuisine familiale découvrez une version revisitée de nos ribs."},
+  { id: 2, image: beefSteak, name: "Entrecôte", price: 15, description: "Un incontournable que nous vous proposons de revisiter à travers nos plats du jour."},
+  { id: 3, image: skewer, name: "Brochettes", price: 10, description: "Poulet, boeuf, délicatement assaissonées et grillées."},
 ],
   burgers = [
-    { id: 4, image: burger, name: "Burger classique", price: 7, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."},
-    { id: 5, image: hambigesztenye, name: "Hambigesztenye", price: 8.5, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur."}
+    { id: 4, image: burger, name: "Burger classique", price: 7, description: "Steack 100g ou 200g, sauce spéciale, salade, oignon, fromage. Suppléments bacon et autres à la demande."},
+    { id: 5, image: hambigesztenye, name: "Hambigesztenye", price: 8.5, description: "Steack 150g, sauce spéciale, sauce barbecue, oignon, salade, fromage."}
   ],
   desserts = [
-    { id: 6, image: montBlanc, name: "Mont-Blanc", price: 4, description: "Un Mont-Blanc sublimement beau et délicieusement bon." },
-    { id: 7, image: pudding, name: "Pudding", price: 4, description: "Un Pudding sublimement beau et délicieusement bon." },
-    { id: 8, image: robinson, name: "Robinson", price: 4, description: "Un Robinson sublimement beau et délicieusement bon." }
+    { id: 6, image: montBlanc, name: "Mont-Blanc", price: 4, description: "Un Mont-Blanc à base de crème de noix de coco, citron, soupoudrée de coco râpé. Elu meilleur dessert par nos clients" },
+    { id: 7, image: pudding, name: "Pudding", price: 4, description: "Un Pudding à base de rhum blanc, pruneaux, raisins, et touche secrète La Grillade." },
+    { id: 8, image: robinson, name: "Robinson", price: 4, description: "Un Robinson à base de confiture de coco, goyave, sublimé de quelques zestes de citron vert." }
   ],
   drinks = [
-    { id: 9, image: redWine, name: "Verre de vin rouge", price: 4.5, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." },
-    { id: 10, image: mojito, name: "Mojito", price: 3.5, description: "Post hoc impie perpetratum quod in aliis quoque iam timebatur." }
+    { id: 9, image: redWine, name: "Verre de vin rouge", price: 4.5, description: "30cl, 50cl. Château Lafite, Cabernet, Pinot, Merlot." },
+    { id: 10, image: mojito, name: "Mojito", price: 3.5, description: "Rhum blanc HSE, menthe, citron, limonade." }
   ];
 
 export class Menu extends React.Component {
@@ -42,7 +42,7 @@ export class Menu extends React.Component {
                         alt="" />
                         <span>{dish.name}</span>
                         <span>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</span>
-                        <span>{dish.price}</span>
+                        <span>{dish.price}€</span>
                         <p>{dish.description}</p>
                       </div>),
             listBurgers = burgers.map((burger) =>
@@ -53,7 +53,7 @@ export class Menu extends React.Component {
                             alt="" />
                             <span>{burger.name}</span>
                             <span>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</span>
-                            <span>{burger.price}</span>
+                            <span>{burger.price}€</span>
                             <p>{burger.description}</p>
                           </div>),
             listDesserts = desserts.map((dessert) =>
@@ -64,7 +64,7 @@ export class Menu extends React.Component {
                             alt="" />
                             <span>{dessert.name}</span>
                             <span>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</span>
-                            <span>{dessert.price}</span>
+                            <span>{dessert.price}€</span>
                             <p>{dessert.description}</p>
                           </div>),
             listDrinks=   drinks.map((drink) =>
@@ -75,7 +75,7 @@ export class Menu extends React.Component {
                             alt="" />
                             <span>{drink.name}</span>
                             <span>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span>
-                            <span>{drink.price}</span>
+                            <span>{drink.price}€</span>
                             <p>{drink.description}</p>
                           </div>);
     return (

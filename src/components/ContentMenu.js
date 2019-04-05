@@ -23,5 +23,7 @@ export const ContentMenu = (props) => {
 ContentMenu.propType = {
   subtitles: PropType.array,
   listDish: PropType.func,
-  listDessert: PropType.func
+  listBurger: PropType.func,
+  listDessert: PropType.func,
+  listDrink: PropType.func,
 }

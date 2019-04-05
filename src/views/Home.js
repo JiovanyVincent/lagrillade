@@ -8,13 +8,13 @@ const sections = [
   },
   {
     subtitle: "A propos",
-    parag1: "Quibus occurrere bene pertinax miles explicatis ordinibus parans hastisque feriens scuta qui habitus iram pugnantium concitat et dolorem proximos iam gestu terrebat sed eum in certamen alacriter consurgentem revocavere ductores rati intempestivum anceps subire certamen cum haut longe muri distarent, quorum tutela securitas poterat in solido locari cunctorum."
+    paragAbout: "La Grillade est un restaurant ouvert par son fondateur J. VINCENT. Etant spécialiste en mets et saveurs grillés, il vous invite à venir vous régaler dans son merveilleux restaurant, et vous réserve de délicieuses surprises de l'entrée au dessert, en passant par les boissons en tous genres."
   },
   {
     subtitle: "Concept",
-    parag1: "Quibus occurrere bene pertinax miles explicatis ordinibus parans hastisque feriens scuta qui habitus iram pugnantium concitat et dolorem proximos iam gestu terrebat sed ",
-    parag2: "Quibus occurrere bene pertinax miles explicatis ordinibus parans hastisque feriens scuta qui habitus iram pugnantium concitat et dolorem proximos iam gestu terrebat sed ",
-    parag3: "Quibus occurrere bene pertinax miles explicatis ordinibus parans hastisque feriens scuta qui habitus iram pugnantium concitat et dolorem proximos iam gestu terrebat sed "
+    concept1: "Espace salle : Pensé pour vous permettre de déguster nos spécialités à votre aise, dans un ambiance chic & cosy. Nous vous avons réservé des espaces fumeurs et non fumeurs, et mettons à votre disposition des chaises pour enfants afin qu'eux aussi puissent se délecter !",
+    concept2: "Burger : Parce que nous savons qu'en semaine vous n'en avez pas toujours le temps, nous vous proposons notre service rapide sur place ou à emporter, préparé avec soin et attention afin de vous permettre de vous régaler.",
+    concept3: "Bar : Un espace bar est mis à votre disposition afin de savourer de délicieux cocktails dans une ambiance lounge. Nos barmans sont présents pour vous servir, et pourront à votre demande vous surprendre par leurs cocktails inédits et exclusifs. "
   },
   {
     title: "Nos spécialités"
@@ -37,10 +37,10 @@ export class Home extends React.Component {
         TitleOne={section1.title}
         SubtitleOne={section2.subtitle}
         SubtitleTwo={section3.subtitle}
-        Concept1={section3.parag1}
-        Concept2={section3.parag2}
-        Concept3={section3.parag3}
-        ParagAbout={section2.parag1}
+        Concept1={section3.concept1}
+        Concept2={section3.concept2}
+        Concept3={section3.concept3}
+        ParagAbout={section2.paragAbout}
         TitleTwo={section4.title}
         TitleThree={section5.title}
       />

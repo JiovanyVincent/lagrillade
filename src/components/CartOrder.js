@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export const CartOrder = (props) => {
   return (
@@ -23,7 +24,17 @@ export const CartOrder = (props) => {
         <p>{props.subtotal}€</p>
       </div>
       <button id="order-now"
-              onClick={props.handleButtonOrder}>Commander</button>
+        onClick={props.handleButtonOrder}>Commander</button>
     </div>
   );
+}
+
+CartOrder.propTypes = {
+  number: PropTypes.number,
+  letter: PropTypes.string,
+  cart: PropTypes.array,
+  handleCounter: PropTypes.func,
+  handleReducer: PropTypes.func,
+  subtotal: PropTypes.number,
+  handleButtonOrder: PropTypes.func
 }

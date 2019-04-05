@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export class ItemsOrder extends React.Component {
 
@@ -21,4 +22,8 @@ export class ItemsOrder extends React.Component {
       </div>
     ); 
   }
+}
+
+ItemsOrder.propTypes = {
+  handleClickAddItems: PropTypes.func
 }

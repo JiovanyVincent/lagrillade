@@ -48,11 +48,14 @@ export class OrderOnline extends React.Component {
       updatedCart.push({id: item.id, name: item.name, price: item.price, quantity: 1})
     }
     this.setState({cart: updatedCart})
+    console.log(updatedCart);
+    
     
     let subtotalItems = this.state.subtotal;
         subtotalItems =  this.state.subtotal + item.price;
     this.setState({subtotal: subtotalItems})
   }
+
 
   handleCounter(item) {
     let counter = this.state.number + 1;
@@ -69,10 +72,12 @@ export class OrderOnline extends React.Component {
       subtotalItems =  this.state.subtotal + item.price;
     this.setState({subtotal: subtotalItems})
   }
+ 
   
   handleReducer(item) {
     let number = this.state.number;
     let subtotal = this.state.subtotal;
+    let cart = this.state.cart;
 
     let letterNull = this.state.letter;
         letterNull = letterNull === "s" && this.state.number <= 2 ? letterNull = "" : letterNull; 
@@ -91,17 +96,19 @@ export class OrderOnline extends React.Component {
                               && number <= 0 ? subtotal = 0 : subtotal;
     this.setState({subtotal: reduceSubtotalItems})
 
-    if (item.quantity === 0) {
-      let removedCart = this.state.cart;
-      removedCart.pop(item.target)
-    }
+    let removedItem = cart.filter(item => item.quantity < 1 ? item <= 1 : item);
+    this.setState({cart: removedItem})
   }
+
 
   handleButtonOrder() {
     alert("Ce site est une démo nous ne pouvons pas accéder à votre demande. Merci de votre visite !")
   }
 
+  
   render() {
+    const parag = "Au choix : plats, burgers, desserts et boissons à la carte. Prix minimum de la commande en ligne 10 €";
+
     return (
       <div>
         <div id="content-order">
@@ -109,7 +116,7 @@ export class OrderOnline extends React.Component {
             <div className="main-content-order">
               <div className="menu-order">
                 <h2>Menu à la carte</h2>
-                <p>Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel commodi alicuius, quod idem adipisci uterque non posset.</p>
+                <p>{parag}</p>
                 <div className="bar-horizontal"></div>
               </div>
               <h3>Plats</h3>

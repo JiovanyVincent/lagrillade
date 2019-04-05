@@ -92,6 +92,7 @@ export const ContentHome = (props) => {
   ContentHome.propTypes = {
     TitleOne: PropTypes.string,
     TitleTwo: PropTypes.string,
+    TitleThree: PropTypes.string,
     SubtitleOne: PropTypes.string,
     ParagAbout: PropTypes.string,
     Concept1: PropTypes.string,
