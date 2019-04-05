@@ -12,9 +12,9 @@ const sections = [
   },
   {
     subtitle: "Concept",
-    concept1: "Espace salle : Pensé pour vous permettre de déguster nos spécialités à votre aise, dans un ambiance chic & cosy. Nous vous avons réservé des espaces fumeurs et non fumeurs, et mettons à votre disposition des chaises pour enfants afin qu'eux aussi puissent se délecter !",
-    concept2: "Burger : Parce que nous savons qu'en semaine vous n'en avez pas toujours le temps, nous vous proposons notre service rapide sur place ou à emporter, préparé avec soin et attention afin de vous permettre de vous régaler.",
-    concept3: "Bar : Un espace bar est mis à votre disposition afin de savourer de délicieux cocktails dans une ambiance lounge. Nos barmans sont présents pour vous servir, et pourront à votre demande vous surprendre par leurs cocktails inédits et exclusifs. "
+    concept1: "Pensé pour vous permettre de déguster nos spécialités à votre aise, dans un ambiance chic & cosy. Nous vous avons réservé des espaces fumeurs et non fumeurs, et mettons à votre disposition des chaises pour enfants afin qu'eux aussi puissent se délecter !",
+    concept2: "Parce que nous savons qu'en semaine vous n'en avez pas toujours le temps, nous vous proposons notre service rapide sur place ou à emporter, préparé avec soin et attention afin de vous permettre de vous régaler.",
+    concept3: "Un espace bar est mis à votre disposition afin de savourer de délicieux cocktails dans une ambiance lounge. Nos barmans sont présents pour vous servir, et pourront à votre demande vous surprendre par leurs cocktails inédits et exclusifs. "
   },
   {
     title: "Nos spécialités"

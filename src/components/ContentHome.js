@@ -29,15 +29,21 @@ export const ContentHome = (props) => {
             <div id="concept" className="row">
               <div className="col-sm">
                 <h4>01</h4>
-                <p>{props.Concept1}</p>
+                <p>
+                  <span style={{fontWeight: "bold", textDecoration: "underline"}}>Espace salle:</span> {props.Concept1}
+                  </p>
               </div>
               <div className="col-sm">
                 <h4>02</h4>
-                <p>{props.Concept2}</p>
+                <p>
+                <span style={{fontWeight: "bold", textDecoration: "underline"}}>Service rapide:</span> {props.Concept2}
+                </p>
               </div>
               <div className="col-sm">
                 <h4>03</h4>
-                <p>{props.Concept3}</p>
+                <p>
+                <span style={{fontWeight: "bold", textDecoration: "underline"}}>Espace Bar:</span> {props.Concept3}
+                </p>
               </div>
             </div>
           </div> 
