@@ -25,5 +25,6 @@ export class ItemsOrder extends React.Component {
 }
 
 ItemsOrder.propTypes = {
+  details: PropTypes.string,
   handleClickAddItems: PropTypes.func
 }

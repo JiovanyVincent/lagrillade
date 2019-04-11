@@ -24,7 +24,9 @@ export const CartOrder = (props) => {
         <p>{props.subtotal}€</p>
       </div>
       <button id="order-now"
-        onClick={props.handleButtonOrder}>Commander</button>
+        onClick={props.handleButtonOrder}>
+        Commander
+      </button>
     </div>
   );
 }

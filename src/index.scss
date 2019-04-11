@@ -532,6 +532,20 @@ body {
       }
     }
 
+    #content-order {
+      display: flex;
+      flex-direction: column;
+      .list-items {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    #cart-order {
+      height: 50vh;
+      margin-bottom: 85px;
+    }
+
     #contact { 
       .row {
         form {
@@ -550,13 +564,5 @@ body {
       }
     }
 
-    #content-order {
-      display: flex;
-      flex-direction: column;
-    }
-    #cart-order {
-      height: 50vh;
-      margin-bottom: 20px;
-    }
   }
 
