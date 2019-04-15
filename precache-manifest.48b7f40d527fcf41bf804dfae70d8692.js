@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "212996e2e696fa93f4fe",
-    "url": "/static/js/2.3dd79839.chunk.js"
+    "revision": "0c718420f743dfbcd0ba",
+    "url": "/static/js/2.720061e4.chunk.js"
   },
   {
     "revision": "7eeb12612f61f82da075c70cad60b90a",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/static/media/mojito.f3c7c786.jpg"
   },
   {
-    "revision": "177995148604bd500ba4e65e5be59f4c",
+    "revision": "90721bd55e9c8e87a9ab18bb8afbb69c",
     "url": "/index.html"
   }
 ];
