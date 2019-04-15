@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/website-lagrillade/precache-manifest.4980c0600b15e37ce1b9ea28ec521eb9.js"
+  "/website-lagrillade/precache-manifest.b99246d4e43a89a6e48203350d4541e8.js"
 );
 
 workbox.clientsClaim();

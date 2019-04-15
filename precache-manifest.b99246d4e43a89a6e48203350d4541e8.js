@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/website-lagrillade/static/media/Ayo.c2f7a2fb.jpg"
   },
   {
-    "revision": "e8a4796e79adf438c827",
-    "url": "/website-lagrillade/static/css/main.e9cff07e.chunk.css"
+    "revision": "dcd6d31c103de01e800e",
+    "url": "/website-lagrillade/static/css/main.888fab61.chunk.css"
   },
   {
     "revision": "9bc039c87f0a6a6d785a",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/website-lagrillade/static/media/M-White.aac97710.jpg"
   },
   {
-    "revision": "e8a4796e79adf438c827",
-    "url": "/website-lagrillade/static/js/main.43a273dc.chunk.js"
+    "revision": "dcd6d31c103de01e800e",
+    "url": "/website-lagrillade/static/js/main.163a0bab.chunk.js"
   },
   {
     "revision": "2edd819c88864cfd92600807a63ca445",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/website-lagrillade/static/media/mojito.f3c7c786.jpg"
   },
   {
-    "revision": "090a0f704528db43ad4d16528e0aa5bf",
+    "revision": "3fbd03e05d8ecb0bb9b74fd3e0ee1517",
     "url": "/website-lagrillade/index.html"
   }
 ];
