@@ -2,13 +2,14 @@
   "name": "website-lagrillade",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.website-lagrillade.com",
+  "homepage": "https://lagrillade.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "add": "^2.0.6",
     "bootstrap": "^4.3.1",
+    "global": "^4.3.2",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
     "popper.js": "^1.14.7",
@@ -17,6 +18,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8",
+    "serve": "^11.0.0",
     "yarn": "^1.13.0"
   },
   "scripts": {
