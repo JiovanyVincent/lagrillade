@@ -2,7 +2,7 @@
   "name": "website-lagrillade",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jiovanyvincent.github.io/",
+  "homepage": "https://website-lagrillade.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
